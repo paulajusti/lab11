@@ -7,7 +7,7 @@ from boto.sqs.connection import SQSConnection
 from boto.exception import SQSError
 
 if (len(sys.argv) != 2):
-    sys.ext('Usage: python count-aws-msgs.py queue_name')
+    sys.exit('Usage: python count-aws-msgs.py queue_name')
 
 queueName = sys.argv[1]
 

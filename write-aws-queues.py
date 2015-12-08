@@ -7,7 +7,7 @@ from boto.sqs.connection import SQSConnection
 from boto.exception import SQSError
 
 if (len(sys.argv) != 3):
-    sys.exit('Usage: python write-aws-queue.py queue_name queue_message')
+    sys.exit('Usage: python write-aws-queues.py queue_name queue_message')
 
 queueName = sys.argv[1]
 queueMessage = sys.argv[2]
